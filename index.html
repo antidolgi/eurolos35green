@@ -124,10 +124,6 @@
       animation: shimmer 3s linear infinite;
     }
 
-    @keyframes shimmer {
-      to { background-position: 200% center; }
-    }
-
     .logo::after {
       content: '35';
       position: absolute; top: -8px; right: -12px;
@@ -139,10 +135,6 @@
       animation: pulse 2s infinite;
     }
 
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-    }
 
     nav ul { display: flex; list-style: none; gap: 2rem; }
     nav a {
@@ -946,6 +938,7 @@
         </div>
         
         <!-- ПРО -->
+        <div class="product-card animate-on-scroll">
         <div class="product-img">
   <img src="images/septik-pro.jpg" alt="Eurolos ПРО" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
@@ -964,6 +957,7 @@
         </div>
         
         <!-- ГРУНТ -->
+        <div class="product-card animate-on-scroll">
         <div class="product-img">
   <img src="images/septik-grunt.jpg" alt="Eurolos ГРУНТ" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
