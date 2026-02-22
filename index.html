@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Eurolos35 — Септики в Вологде | Официальный дилер | Монтаж под ключ</title>
+  
+  <meta name="description" content="Официальный дилер Eurolos в Вологодской области. Септики ЭКО, БИО, ПРО, ГРУНТ. Монтаж за 1 день. Гарантия 10 лет. Рассчитайте стоимость онлайн!">
+  <meta name="keywords" content="септик Вологда, Eurolos, септик под ключ, автономная канализация, кессон, монтаж септика">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary: #1B943C;
+      --primary-dark: #0F5C29;
+      --secondary: #F2C94C;
+      --accent: #FF6B35;
+      --light: #f8fbfd;
+      --dark: #1A1A1A;
+      --gray: #64748b;
+      --light-gray: #e2e8f0;
+      --white: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-md: 0 8px 25px rgba(0,0,0,0.12);
+      --shadow-lg: 0 20px 50px rgba(0,0,0,0.15);
+      --shadow-glow: 0 0 30px rgba(27, 148, 60, 0.25);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-fast: all 0.25s ease;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+      font-size: 16px;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 10% 20%, rgba(27,148,60,0.08) 0%, transparent 25%),
+                  radial-gradient(circle at 90% 80%, rgba(242,201,76,0.08) 0%, transparent 30%);
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+      padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center;
+      transition: var(--transition);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    header.scrolled {
+      padding: 0.75rem 5%;
+      box-shadow: var(--shadow-md);
+      background: rgba(255, 255, 255, 0.98);
+    }
+
+    .logo {
+      display: flex; align-items: center; gap: 0.75rem;
+      font-weight: 800; font-size: 1.5rem; text-decoration: none;
+      position: relative;
+    }
+
+    .logo-icon {
+      width: 45px; height: 45px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      box-shadow: var(--shadow-glow);
+      position: relative;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .logo-icon::before {
+      content: '💧';
+      font-size: 1.8rem;
+      animation: dropFall 2s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { filter: hue-rotate(0deg); }
+      50% { filter: hue-rotate(20deg); }
+    }
+
+    @keyframes dropFall {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 1; }
+      50% { transform: translateY(-5px) scale(1.1); opacity: 0.8; }
+    }
+
+    .logo-text {
+      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 3s linear infinite;
+    }
+
+    @keyframes shimmer {
+      to { background-position: 200% center; }
+    }
+
+    .logo::after {
+      content: '35';
+      position: absolute; top: -8px; right: -12px;
+      background: var(--accent); color: white;
+      font-size: 0.7rem; font-weight: 700;
+      width: 22px; height: 22px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 10px rgba(255, 107, 53, 0.4);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    nav ul { display: flex; list-style: none; gap: 2rem; }
+    nav a {
+      text-decoration: none; color: var(--dark); font-weight: 600; font-size: 1.05rem;
+      position: relative; padding: 0.5rem 0; transition: var(--transition-fast);
+    }
+    nav a:hover, nav a.active { color: var(--primary); }
+    nav a::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 2px; background: var(--primary);
+      border-radius: var(--radius-full); transition: var(--transition);
+    }
+    nav a:hover::after, nav a.active::after { width: 100%; }
+
+    .header-contacts { display: flex; align-items: center; gap: 1.25rem; }
+    .phone-link {
+      display: flex; align-items: center; gap: 0.5rem;
+      color: var(--primary); font-weight: 700; font-size: 1.1rem;
+      text-decoration: none; transition: var(--transition-fast);
+    }
+    .phone-link:hover { color: var(--primary-dark); transform: translateX(3px); }
+
+    .btn {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white; border: none; padding: 0.85rem 1.75rem;
+      border-radius: var(--radius-full); font-weight: 600; font-size: 1.05rem;
+      cursor: pointer; transition: var(--transition);
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      box-shadow: var(--shadow-glow); text-decoration: none;
+      position: relative; overflow: hidden;
+    }
+    .btn::before {
+      content: ''; position: absolute; top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.6s;
+    }
+    .btn:hover::before { left: 100%; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(27, 74, 40, 0.35); }
+    
+    .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+    .btn-outline:hover { background: var(--primary); color: white; }
+    
+    .btn-accent {
+      background: linear-gradient(135deg, var(--accent), #e55a2b);
+      box-shadow: 0 8px 25px rgba(255, 107, 53, 0.35);
+    }
+    .btn-accent:hover { box-shadow: 0 12px 40px rgba(255, 107, 53, 0.5); transform: translateY(-3px); }
+    .btn-sm { padding: 0.65rem 1.25rem; font-size: 0.95rem; }
+    
+    .mobile-toggle {
+      display: none; background: none; border: none;
+      font-size: 1.5rem; color: var(--primary); cursor: pointer; z-index: 1001;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center;
+      padding: 8rem 5% 5rem; position: relative; overflow: hidden;
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 60%;
+      background: linear-gradient(to top, var(--light), transparent); z-index: 1;
+    }
+    .hero-content { max-width: 650px; position: relative; z-index: 2; animation: fadeInUp 0.8s ease-out; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(27, 148, 60, 0.12); color: var(--primary);
+      padding: 0.4rem 1rem; border-radius: var(--radius-full);
+      font-weight: 600; font-size: 0.95rem; margin-bottom: 1.5rem;
+      border: 1px solid rgba(27, 148, 60, 0.2);
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 3.75rem); font-weight: 800; line-height: 1.1;
+      margin-bottom: 1.5rem; color: var(--dark);
+    }
+    .hero p { font-size: 1.25rem; color: var(--gray); margin-bottom: 2.5rem; max-width: 550px; }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .hero-stats { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .stat-item { text-align: center; }
+    .stat-value { font-size: 2rem; font-weight: 800; color: var(--primary); display: block; }
+    .stat-label { font-size: 0.95rem; color: var(--gray); font-weight: 500; }
+    
+    .hero-visual {
+      position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+      width: 45%; max-width: 650px; z-index: 2; animation: floatIn 1s ease-out;
+    }
+    .hero-visual img {
+      width: 100%; border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg); border: 8px solid white;
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes floatIn { from { opacity: 0; transform: translate(50px, -50%); } to { opacity: 1; transform: translate(0, -50%); } }
+
+    /* ===== OFFICIAL DEALER ===== */
+    .official-badge-section {
+      padding: 3rem 5%;
+      background: linear-gradient(135deg, rgba(27,148,60,0.08), rgba(242,201,76,0.08));
+      border-top: 2px solid rgba(27,148,60,0.2);
+      border-bottom: 2px solid rgba(27,148,60,0.2);
+    }
+    .official-badge-container { max-width: 1000px; margin: 0 auto; }
+    .badge-content {
+      display: flex; align-items: center; gap: 2rem; justify-content: center; flex-wrap: wrap;
+    }
+    .badge-icon { animation: rotate 10s linear infinite; }
+    .badge-text h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .badge-text p { color: var(--gray); margin: 0.25rem 0; }
+    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ===== SECTIONS ===== */
+    section { padding: 6rem 5%; position: relative; }
+    .section-header { text-align: center; max-width: 700px; margin: 0 auto 4rem; }
+    .section-badge {
+      display: inline-block; background: rgba(27,148,60,0.12); color: var(--primary);
+      padding: 0.35rem 1.1rem; border-radius: var(--radius-full);
+      font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;
+      border: 1px solid rgba(27,148,60,0.2);
+    }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: 1rem; color: var(--dark); }
+    .section-desc { color: var(--gray); font-size: 1.1rem; }
+
+    /* ===== CALCULATOR ===== */
+    .calculator-section {
+      padding: 4rem 5%;
+      background: linear-gradient(135deg, rgba(27,148,60,0.08), rgba(242,201,76,0.08));
+    }
+    .calculator-container {
+      max-width: 700px; margin: 0 auto;
+      background: white; padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+    .calc-question { margin-bottom: 2rem; }
+    .calc-question h3 { margin-bottom: 1.5rem; color: var(--dark); font-size: 1.3rem; }
+    .calc-options {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .calc-option {
+      padding: 1.25rem; border: 2px solid var(--light-gray);
+      border-radius: var(--radius-md); background: white;
+      font-weight: 600; cursor: pointer; transition: all 0.3s;
+      font-size: 1rem; text-align: center;
+    }
+    .calc-option:hover {
+      border-color: var(--primary);
+      background: rgba(27,148,60,0.05);
+      transform: translateY(-2px);
+    }
+    .calc-option.selected {
+      background: var(--primary); color: white;
+      border-color: var(--primary);
+    }
+    .calc-result {
+      display: none; margin-top: 2rem; padding: 2rem;
+      background: linear-gradient(135deg, rgba(27,148,60,0.1), rgba(242,201,76,0.1));
+      border-radius: var(--radius-md);
+      border: 2px solid var(--primary);
+      text-align: center;
+    }
+    .calc-result h3 { color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem; }
+    .calc-recommendation { font-size: 1.3rem; margin-bottom: 1rem; font-weight: 700; }
+    .calc-price {
+      font-size: 2.5rem; font-weight: 800; color: var(--primary);
+      margin: 1.5rem 0;
+    }
+    .calc-note { color: var(--gray); margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+    /* ===== PRODUCTS ===== */
+    .catalog-tabs {
+      display: flex; gap: 1rem; margin-bottom: 3rem;
+      flex-wrap: wrap; justify-content: center;
+    }
+    .tab-btn {
+      padding: 0.75rem 1.5rem; border: 2px solid var(--light-gray);
+      border-radius: var(--radius-full); background: white;
+      font-weight: 600; cursor: pointer; transition: var(--transition-fast);
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: var(--primary); color: white; border-color: var(--primary);
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeInUp 0.5s ease; }
+
+    .products-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem; max-width: 1400px; margin: 0 auto;
+    }
+    .product-card {
+      background: var(--white); border-radius: var(--radius-md); overflow: hidden;
+      box-shadow: var(--shadow-md); transition: var(--transition);
+      position: relative; display: flex; flex-direction: column;
+      opacity: 0; transform: translateY(20px);
+    }
+    .product-card.visible { opacity: 1; transform: translateY(0); }
+    .product-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+    
+    .product-img {
+      height: 220px; background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .product-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: var(--transition);
+    }
+    .product-card:hover .product-img img { transform: scale(1.05); }
+    
+    .product-content { padding: 1.75rem; flex-grow: 1; display: flex; flex-direction: column; }
+    .product-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark); }
+    .product-desc { color: var(--gray); margin-bottom: 1.5rem; flex-grow: 1; }
+    .product-features { list-style: none; margin-bottom: 1.5rem; }
+    .product-features li {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.95rem; color: var(--dark); margin-bottom: 0.4rem;
+    }
+    .product-features i { color: var(--primary); font-size: 0.9rem; }
+    .product-price { font-weight: 700; font-size: 1.3rem; color: var(--primary); margin-bottom: 1rem; }
+    .product-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+    /* ===== VIDEO SECTION ===== */
+    .video-section {
+      padding: 4rem 5%;
+      background: var(--white);
+    }
+    .video-container {
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ===== SERVICES ===== */
+    .services { background: linear-gradient(135deg, rgba(27,148,60,0.04), rgba(242,201,76,0.06)); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.75rem; max-width: 1200px; margin: 0 auto;
+    }
+    .service-card {
+      background: var(--white); padding: 2rem; border-radius: var(--radius-md);
+      text-align: center; box-shadow: var(--shadow-sm); transition: var(--transition);
+      opacity: 0; transform: translateY(20px);
+    }
+    .service-card.visible { opacity: 1; transform: translateY(0); }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .service-icon {
+      width: 70px; height: 70px;
+      background: linear-gradient(135deg, rgba(27,148,60,0.1), rgba(242,201,76,0.15));
+      border-radius: var(--radius-full);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.75rem;
+      transition: var(--transition);
+    }
+    .service-card:hover .service-icon {
+      transform: scale(1.1) rotate(5deg);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+    .service-title { font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark); }
+    .service-desc { color: var(--gray); font-size: 1rem; }
+
+    /* ===== TRUST ===== */
+    .trust-section { padding: 4rem 5%; background: var(--white); }
+    .trust-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem; max-width: 1200px; margin: 0 auto;
+    }
+    .trust-item {
+      text-align: center; padding: 2rem; border-radius: var(--radius-md);
+      background: var(--light); transition: var(--transition);
+    }
+    .trust-item:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .trust-icon {
+      width: 70px; height: 70px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem; color: white; font-size: 1.75rem;
+    }
+    .trust-item h4 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--dark); }
+    .trust-item p { color: var(--gray); font-size: 0.95rem; }
+
+    /* ===== URGENCY ===== */
+    .urgency-banner {
+      background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+      border: 2px solid var(--accent); border-radius: var(--radius-md);
+      padding: 2rem; margin: 3rem auto; max-width: 900px;
+      animation: pulse 2s infinite;
+    }
+    .urgency-content {
+      display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;
+    }
+    .urgency-content strong { display: block; font-size: 1.3rem; color: var(--dark); margin-bottom: 0.25rem; }
+    .urgency-content p { color: var(--gray); margin: 0; }
+    .countdown { display: flex; gap: 1rem; }
+    .countdown-item {
+      background: var(--primary); color: white; padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-sm); text-align: center; min-width: 70px;
+    }
+    .countdown-value { display: block; font-size: 1.75rem; font-weight: 800; line-height: 1; }
+    .countdown-label { font-size: 0.85rem; opacity: 0.9; }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255,107,53,0.4); }
+      50% { box-shadow: 0 0 0 10px rgba(255,107,53,0); }
+    }
+
+    /* ===== CONTACTS ===== */
+    .contacts-container {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem; max-width: 1200px; margin: 0 auto;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+    .contact-block {
+      background: var(--white); padding: 2rem; border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-title {
+      font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--dark);
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .contact-title i { color: var(--primary); font-size: 1.3rem; }
+    .contact-links { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-link {
+      display: flex; align-items: center; gap: 1rem; text-decoration: none;
+      color: var(--dark); font-weight: 500; padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm); transition: var(--transition-fast);
+      background: var(--light);
+    }
+    .contact-link:hover {
+      background: rgba(27, 148, 60, 0.08); transform: translateX(4px); color: var(--primary);
+    }
+    .contact-link i { font-size: 1.3rem; width: 24px; text-align: center; }
+    .contact-link.telegram i { color: #0088cc; }
+    .contact-link.vk i { color: #0077ff; }
+    .contact-link.phone i { color: #34a853; }
+    
+    .contact-form-container {
+      background: var(--white); padding: 2.5rem; border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg); position: relative; overflow: hidden;
+    }
+    .contact-form-container::before {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+    }
+    .form-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--dark); }
+    .form-subtitle { color: var(--gray); margin-bottom: 2rem; font-size: 1.05rem; }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--dark); font-size: 0.95rem; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: 0.95rem 1.25rem; border: 2px solid var(--light-gray);
+      border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;
+      transition: var(--transition-fast); background: var(--light);
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none; border-color: var(--primary); background: white;
+      box-shadow: 0 0 0 4px rgba(27, 148, 60, 0.15);
+    }
+    .form-textarea { min-height: 120px; resize: vertical; }
+    .captcha-group {
+      display: flex; gap: 1rem; align-items: center;
+      padding: 1rem; background: var(--light);
+      border-radius: var(--radius-sm); margin-bottom: 1.5rem;
+    }
+    .captcha-question {
+      font-weight: 700; color: var(--primary);
+      font-size: 1.1rem; min-width: 80px;
+    }
+    .captcha-input {
+      flex: 1; padding: 0.75rem; border: 2px solid var(--light-gray);
+      border-radius: var(--radius-sm); font-size: 1rem;
+    }
+    .captcha-input:focus {
+      outline: none; border-color: var(--primary);
+    }
+    .submit-btn { width: 100%; padding: 1rem; font-size: 1.1rem; margin-top: 0.5rem; }
+    .form-success {
+      display: none; background: rgba(52, 168, 83, 0.12); color: #2e7d32;
+      padding: 1rem; border-radius: var(--radius-sm); margin-top: 1rem;
+      text-align: center; font-weight: 500; border: 1px solid rgba(52, 168, 83, 0.3);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark); color: rgba(255,255,255,0.85);
+      padding: 4rem 5% 2rem; text-align: center;
+    }
+    .footer-logo {
+      font-size: 1.75rem; font-weight: 800; margin-bottom: 1.5rem;
+      display: inline-flex; align-items: center; gap: 0.5rem; color: white;
+    }
+    .footer-logo span {
+      background: linear-gradient(90deg, #64b5f6, #4fc3f7);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .footer-desc { max-width: 600px; margin: 0 auto 2.5rem; font-size: 1.05rem; line-height: 1.7; }
+    .footer-contacts { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .footer-link {
+      display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.9);
+      text-decoration: none; font-weight: 500; transition: var(--transition-fast);
+      padding: 0.5rem 1rem; border-radius: var(--radius-full);
+    }
+    .footer-link:hover { background: rgba(255,255,255,0.12); color: white; transform: translateY(-2px); }
+    .developer-credit {
+      margin-top: 2rem; padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.95rem; color: rgba(255,255,255,0.7);
+    }
+    .developer-credit a {
+      color: var(--secondary); text-decoration: none;
+      font-weight: 600; transition: var(--transition-fast);
+    }
+    .developer-credit a:hover {
+      color: var(--accent); text-decoration: underline;
+    }
+    .copyright {
+      padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.95rem; color: rgba(255,255,255,0.7);
+    }
+    .copyright a { color: #64b5f6; text-decoration: none; font-weight: 600; }
+
+    /* ===== ANIMATIONS ===== */
+    .animate-on-scroll {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== MOBILE CALL BUTTON ===== */
+    .mobile-call-button {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0;
+      background: white; box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+      padding: 0.75rem 1rem; z-index: 999; gap: 0.75rem;
+    }
+    .mobile-call-button a {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      gap: 0.5rem; padding: 1rem; border-radius: var(--radius-full);
+      text-decoration: none; font-weight: 600; font-size: 1rem;
+      transition: var(--transition-fast);
+    }
+    .call-btn {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+    }
+    .callback-btn {
+      background: var(--light); color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    /* ===== POPUP MODAL ===== */
+    .popup-overlay {
+      display: none; position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 2000;
+      animation: fadeIn 0.3s ease;
+    }
+    .popup-overlay.active { display: flex; align-items: center; justify-content: center; }
+    .popup-modal {
+      background: white; padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      max-width: 500px; width: 90%;
+      position: relative;
+      animation: slideUp 0.4s ease;
+      box-shadow: var(--shadow-lg);
+    }
+    .popup-close {
+      position: absolute; top: 1rem; right: 1rem;
+      background: none; border: none;
+      font-size: 1.5rem; cursor: pointer;
+      color: var(--gray); width: 36px; height: 36px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: var(--transition-fast);
+    }
+    .popup-close:hover {
+      background: var(--light); color: var(--dark);
+    }
+    .popup-title {
+      font-size: 1.8rem; font-weight: 700;
+      margin-bottom: 0.5rem; color: var(--dark);
+    }
+    .popup-subtitle {
+      color: var(--gray); margin-bottom: 2rem;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .hero-visual { width: 40%; right: 3%; }
+      nav ul { gap: 1.25rem; }
+      nav a { font-size: 0.95rem; }
+    }
+    @media (max-width: 768px) {
+      .mobile-toggle { display: block; }
+      nav {
+        position: fixed; top: 70px; left: 0; width: 100%;
+        background: white; padding: 1.5rem 5%;
+        box-shadow: var(--shadow-md); transform: translateY(-150%);
+        transition: var(--transition); z-index: 999;
+      }
+      nav.active { transform: translateY(0); }
+      nav ul { flex-direction: column; align-items: center; gap: 1.5rem; }
+      .header-contacts { display: none; }
+      .hero { padding-top: 7rem; text-align: center; }
+      .hero-content { margin: 0 auto; }
+      .hero-buttons { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .hero-visual { display: none; }
+      section { padding: 3rem 5%; }
+      .section-header { margin-bottom: 2.5rem; }
+      .contact-form-container { padding: 1.5rem; }
+      .badge-content { flex-direction: column; text-align: center; }
+      .urgency-content { flex-direction: column; text-align: center; }
+      .countdown { justify-content: center; }
+      .mobile-call-button { display: flex; }
+      body { padding-bottom: 80px; }
+      .calculator-container { padding: 1.5rem; }
+      .calc-options { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      :root { --radius-md: 14px; --radius-lg: 20px; }
+      .logo { font-size: 1.35rem; }
+      .logo-icon { width: 34px; height: 34px; }
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1.05rem; }
+      .btn { padding: 0.75rem 1.5rem; font-size: 1rem; min-height: 48px; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 300px; justify-content: center; }
+      .stat-value { font-size: 1.5rem; }
+      .product-actions { flex-direction: column; }
+      .footer-contacts { flex-direction: column; align-items: center; }
+      .form-input, .form-select, .form-textarea { min-height: 48px; font-size: 16px; }
+      .phone-link { font-size: 1.1rem; padding: 0.75rem 1rem; }
+      body { font-size: 16px; }
+      h1, h2, h3 { line-height: 1.2; }
+      .popup-modal { padding: 2rem 1.5rem; }
+      .popup-title { font-size: 1.5rem; }
+    }
+
+    .text-center { text-align: center; }
+    .mt-1 { margin-top: 1rem; }
+    .mt-2 { margin-top: 2rem; }
+    .mb-1 { margin-bottom: 1rem; }
+    .mb-2 { margin-bottom: 2rem; }
+    .divider {
+      height: 1px; background: linear-gradient(90deg, transparent, var(--light-gray), transparent);
+      margin: 3rem 0; border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <a href="#" class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Евролос</div>
+      35
+    </a>
+    
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Меню">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav id="nav">
+      <ul>
+        <li><a href="#calculator" class="active">Калькулятор</a></li>
+        <li><a href="#products">Продукция</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-contacts">
+      <a href="tel:+79216860605" class="phone-link">
+        <i class="fas fa-phone-alt"></i>
+        +7 921 686-06-05
+      </a>
+      <a href="#contacts" class="btn btn-sm">Заявка</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-certificate"></i>
+        Официальный дилер в Вологодской области
+      </div>
+      <h1>Септики и автономная канализация под ключ</h1>
+      <p>Профессиональные решения для частного дома. Монтаж за 1 день. Гарантия 10 лет. Рассчитайте стоимость онлайн!</p>
+      
+      <div class="hero-buttons">
+        <a href="#calculator" class="btn btn-accent">
+          <i class="fas fa-calculator"></i>
+          Рассчитать стоимость
+        </a>
+        <a href="#products" class="btn btn-outline">
+          <i class="fas fa-boxes"></i>
+          Каталог
+        </a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-value">10 лет</span>
+          <span class="stat-label">гарантия</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">200 000+</span>
+          <span class="stat-label">клиентов</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">1 день</span>
+          <span class="stat-label">монтаж</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <div style="background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 20px; height: 450px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; text-align: center; padding: 1rem; box-shadow: 0 20px 50px rgba(0,0,0,0.2);">
+        <div>
+          <i class="fas fa-water" style="font-size: 4rem; margin-bottom: 1rem;"></i>
+          <div>Септики Eurolos<br>Кессоны<br>Монтаж под ключ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFICIAL DEALER ===== -->
+  <section class="official-badge-section">
+    <div class="official-badge-container">
+      <div class="badge-content">
+        <div class="badge-icon">
+          <i class="fas fa-certificate" style="color: var(--secondary); font-size: 3rem;"></i>
+        </div>
+        <div class="badge-text">
+          <h3>✅ Официальный дилер Eurolos</h3>
+          <p>Работаем напрямую с заводом с 2018 года</p>
+          <p><strong>Гарантия лучшей цены</strong></p>
+        </div>
+        <a href="https://eurolos.ru" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fas fa-external-link-alt"></i>
+          eurolos.ru
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALCULATOR ===== -->
+  <section id="calculator" class="calculator-section">
+    <div class="section-header">
+      <span class="section-badge">ОНЛАЙН-КАЛЬКУЛЯТОР</span>
+      <h2 class="section-title">Рассчитайте стоимость за 1 минуту</h2>
+      <p class="section-desc">Ответьте на 4 вопроса и получите рекомендацию</p>
+    </div>
+    
+    <div class="calculator-container">
+      <!-- Question 1 -->
+      <div class="calc-question" id="q1">
+        <h3>1. Сколько человек будет проживать?</h3>
+        <div class="calc-options">
+          <button class="calc-option" onclick="selectOption('people', 3, this)">До 3 человек</button>
+          <button class="calc-option" onclick="selectOption('people', 5, this)">4-5 человек</button>
+          <button class="calc-option" onclick="selectOption('people', 8, this)">6-8 человек</button>
+          <button class="calc-option" onclick="selectOption('people', 10, this)">Более 8</button>
+        </div>
+      </div>
+      
+      <!-- Question 2 -->
+      <div class="calc-question" id="q2" style="display: none;">
+        <h3>2. Тип проживания?</h3>
+        <div class="calc-options">
+          <button class="calc-option" onclick="selectOption('living', 'permanent', this)">Постоянное (круглый год)</button>
+          <button class="calc-option" onclick="selectOption('living', 'seasonal', this)">Сезонное (дача)</button>
+        </div>
+      </div>
+      
+      <!-- Question 3 -->
+      <div class="calc-question" id="q3" style="display: none;">
+        <h3>3. Уровень грунтовых вод?</h3>
+        <div class="calc-options">
+          <button class="calc-option" onclick="selectOption('water', 'low', this)">Низкий (более 3м)</button>
+          <button class="calc-option" onclick="selectOption('water', 'high', this)">Высокий (менее 3м)</button>
+          <button class="calc-option" onclick="selectOption('water', 'unknown', this)">Не знаю</button>
+        </div>
+      </div>
+      
+      <!-- Question 4 -->
+      <div class="calc-question" id="q4" style="display: none;">
+        <h3>4. Нужен ли монтаж?</h3>
+        <div class="calc-options">
+          <button class="calc-option" onclick="selectOption('install', 'yes', this)">Да, под ключ</button>
+          <button class="calc-option" onclick="selectOption('install', 'no', this)">Нет, только оборудование</button>
+        </div>
+      </div>
+      
+      <!-- Result -->
+      <div id="calc-result" class="calc-result">
+        <h3><i class="fas fa-check-circle"></i> Рекомендуем:</h3>
+        <div id="calc-recommendation" class="calc-recommendation"></div>
+        <div id="calc-price" class="calc-price"></div>
+        <p class="calc-note">* Точная стоимость после бесплатного замера</p>
+        
+        <h4 style="margin: 1.5rem 0 1rem; color: var(--dark);">Оставьте контакты для детального расчета:</h4>
+        <form id="calcForm" onsubmit="submitCalcForm(event)">
+          <div style="display: grid; gap: 1rem; margin-bottom: 1rem;">
+            <input type="text" id="calcName" class="form-input" placeholder="Ваше имя" required>
+            <input type="tel" id="calcPhone" class="form-input" placeholder="Телефон" required>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width: 100%; justify-content: center;">
+            <i class="fas fa-paper-plane"></i>
+            Получить расчет
+          </button>
+        </form>
+        
+        <button onclick="resetCalculator()" style="margin-top: 1rem; background: none; border: none; color: var(--gray); cursor: pointer; text-decoration: underline; font-size: 0.95rem;">
+          Рассчитать заново
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section id="products">
+    <div class="section-header">
+      <span class="section-badge">КАТАЛОГ</span>
+      <h2 class="section-title">Продукция Eurolos</h2>
+      <p class="section-desc">Септики, кессоны и дополнительное оборудование</p>
+    </div>
+    
+    <div class="catalog-tabs">
+      <button class="tab-btn active" onclick="switchTab('septiki')">Септики</button>
+      <button class="tab-btn" onclick="switchTab('kessony')">Кессоны</button>
+      <button class="tab-btn" onclick="switchTab('dop')">Дополнительно</button>
+    </div>
+
+    <!-- СЕПТИКИ -->
+    <div id="septiki" class="tab-content active">
+      <div class="products-grid">
+        <!-- ЭКО -->
+        <div class="product-card animate-on-scroll">
+          <div class="product-img">
+            <i class="fas fa-home" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Eurolos ЭКО</h3>
+            <p class="product-desc">Энергонезависимый септик для сезонного проживания</p>
+            <ul class="product-features">
+              <li><i class="fas fa-check-circle"></i> Без электричества</li>
+              <li><i class="fas fa-check-circle"></i> 3-20 человек</li>
+            </ul>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/septiki/eko/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- БИО -->
+        <div class="product-card animate-on-scroll">
+          <div class="product-img">
+            <i class="fas fa-leaf" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Eurolos БИО</h3>
+            <p class="product-desc">Станция биологической очистки для постоянного проживания</p>
+            <ul class="product-features">
+              <li><i class="fas fa-check-circle"></i> Очистка 98%</li>
+              <li><i class="fas fa-check-circle"></i> 3-8 человек</li>
+            </ul>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/septiki/bio/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ПРО -->
+        <div class="product-card animate-on-scroll">
+          <div class="product-img">
+            <i class="fas fa-cogs" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Eurolos ПРО</h3>
+            <p class="product-desc">Аэрационная установка для коттеджей</p>
+            <ul class="product-features">
+              <li><i class="fas fa-check-circle"></i> Компрессорная</li>
+              <li><i class="fas fa-check-circle"></i> 3-30 человек</li>
+            </ul>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/septiki/pro/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ГРУНТ -->
+        <div class="product-card animate-on-scroll">
+          <div class="product-img">
+            <i class="fas fa-water" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Eurolos ГРУНТ</h3>
+            <p class="product-desc">Для высоких грунтовых вод</p>
+            <ul class="product-features">
+              <li><i class="fas fa-check-circle"></i> Премиум класс</li>
+              <li><i class="fas fa-check-circle"></i> УФ-обеззараживание</li>
+            </ul>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/septiki/grunt/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- КЕССОНЫ -->
+    <div id="kessony" class="tab-content">
+      <div class="products-grid">
+        <div class="product-card animate-on-scroll">
+          <div class="product-img" style="background: linear-gradient(135deg, #2c3e50, #34495e);">
+            <i class="fas fa-tint" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Кессон для скважины</h3>
+            <p class="product-desc">Защита скважины от промерзания и грунтовых вод</p>
+            <ul class="product-features">
+              <li><i class="fas fa-check-circle"></i> 5 моделей</li>
+              <li><i class="fas fa-check-circle"></i> Монтаж за 1 день</li>
+            </ul>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/caisson/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ДОПОЛНИТЕЛЬНО -->
+    <div id="dop" class="tab-content">
+      <div class="products-grid">
+        <div class="product-card animate-on-scroll">
+          <div class="product-img" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+            <i class="fas fa-industry" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Eurolos ЭкоПром</h3>
+            <p class="product-desc">Промышленные септики для предприятий</p>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/ekoprom/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card animate-on-scroll">
+          <div class="product-img" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+            <i class="fas fa-tank-water" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Contus</h3>
+            <p class="product-desc">Емкости для воды и топлива</p>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/contus/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card animate-on-scroll">
+          <div class="product-img" style="background: linear-gradient(135deg, #f39c12, #d68910);">
+            <i class="fas fa-filter" style="font-size: 4rem; color: rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Жироуловители</h3>
+            <p class="product-desc">Для кафе и ресторанов</p>
+            <div class="product-actions">
+              <a href="#contacts" class="btn btn-sm">Заказать</a>
+              <a href="https://eurolos.ru/grease/" target="_blank" class="btn btn-sm btn-outline">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services">
+    <div class="section-header">
+      <span class="section-badge">УСЛУГИ</span>
+      <h2 class="section-title">Полный комплекс работ</h2>
+      <p class="section-desc">От консультации до сервисного обслуживания</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card animate-on-scroll">
+        <div class="service-icon"><i class="fas fa-calculator"></i></div>
+        <h3 class="service-title">Бесплатный расчет</h3>
+        <p class="service-desc">Подберем оборудование под ваш участок. Выезд инженера — 0 ₽</p>
+      </div>
+      
+      <div class="service-card animate-on-scroll">
+        <div class="service-icon"><i class="fas fa-truck-loading"></i></div>
+        <h3 class="service-title">Доставка и монтаж</h3>
+        <p class="service-desc">Доставка по области. Монтаж за 1 день с гарантией</p>
+      </div>
+      
+      <div class="service-card animate-on-scroll">
+        <div class="service-icon"><i class="fas fa-tools"></i></div>
+        <h3 class="service-title">Обслуживание</h3>
+        <p class="service-desc">Откачка, чистка, замена фильтров. Договор на сервис</p>
+      </div>
+      
+      <div class="service-card animate-on-scroll">
+        <div class="service-icon"><i class="fas fa-wrench"></i></div>
+        <h3 class="service-title">Ремонт</h3>
+        <p class="service-desc">Ремонт после гарантии. Замена комплектующих</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO ===== -->
+  <section class="video-section">
+    <div class="section-header">
+      <span class="section-badge">ВИДЕО</span>
+      <h2 class="section-title">Как происходит монтаж</h2>
+      <p class="section-desc">Посмотрите процесс установки септика под ключ</p>
+    </div>
+    
+    <div class="video-container">
+      <div class="video-wrapper">
+        <iframe src="https://vk.com/video_ext.php?oid=-140739743&id=456239101&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST ===== -->
+  <section class="trust-section">
+    <div class="trust-grid">
+      <div class="trust-item animate-on-scroll">
+        <div class="trust-icon" style="background: var(--primary);"><i class="fas fa-shield-alt"></i></div>
+        <h4>Гарантия 10 лет</h4>
+        <p>На герметичность корпуса</p>
+      </div>
+      <div class="trust-item animate-on-scroll">
+        <div class="trust-icon" style="background: var(--secondary);"><i class="fas fa-medal"></i></div>
+        <h4>200 000+ клиентов</h4>
+        <p>По всей России</p>
+      </div>
+      <div class="trust-item animate-on-scroll">
+        <div class="trust-icon" style="background: var(--accent);"><i class="fas fa-ruble-sign"></i></div>
+        <h4>Лучшая цена</h4>
+        <p>Прямые поставки с завода</p>
+      </div>
+      <div class="trust-item animate-on-scroll">
+        <div class="trust-icon" style="background: #1e88a8;"><i class="fas fa-clock"></i></div>
+        <h4>Монтаж за 1 день</h4>
+        <p>Профессиональная установка</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== URGENCY ===== -->
+  <div style="padding: 0 5%; max-width: 900px; margin: 0 auto;">
+    <div class="urgency-banner animate-on-scroll">
+      <div class="urgency-content">
+        <i class="fas fa-fire" style="color: var(--accent); font-size: 2rem;"></i>
+        <div>
+          <strong>🔥 Акция апреля 2026 года!</strong>
+          <p>Скидка 15% на монтаж при заказе до 30 апреля</p>
+        </div>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label">дней</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">часов</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">минут</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACTS ===== -->
+  <section id="contacts">
+    <div class="section-header">
+      <span class="section-badge">КОНТАКТЫ</span>
+      <h2 class="section-title">Оставьте заявку</h2>
+      <p class="section-desc">Перезвоним за 15 минут</p>
+    </div>
+    
+    <div class="contacts-container">
+      <div class="contact-info">
+        <div class="contact-block">
+          <h3 class="contact-title"><i class="fas fa-headset"></i> Контакты</h3>
+          <div class="contact-links">
+            <a href="tel:+79216860605" class="contact-link phone">
+              <i class="fas fa-phone-alt"></i>
+              +7 921 686-06-05
+            </a>
+            <a href="https://t.me/Dedal35" target="_blank" class="contact-link telegram">
+              <i class="fab fa-telegram-plane"></i>
+              @Dedal35 (Telegram)
+            </a>
+            <a href="https://vk.com/eurolos35" target="_blank" class="contact-link vk">
+              <i class="fab fa-vk"></i>
+              Написать ВКонтакте
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-block">
+          <h3 class="contact-title"><i class="fas fa-map-marker-alt"></i> Адрес</h3>
+          <p style="color: var(--gray);">
+            <strong>г. Вологда</strong><br>
+            Пн-Пт: 9:00 - 19:00<br>
+            Сб: 10:00 - 16:00
+          </p>
+        </div>
+      </div>
+      
+      <div class="contact-form-container">
+        <h3 class="form-title">Заявка на расчет</h3>
+        <p class="form-subtitle">Заполните форму — подберем лучшее решение</p>
+        
+        <form id="leadForm" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label for="name" class="form-label">Ваше имя *</label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="Иван Иванов">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" class="form-label">Телефон *</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+7 (___) ___-__-__">
+          </div>
+          
+          <div class="form-group">
+            <label for="product" class="form-label">Что вас интересует?</label>
+            <select id="product" name="product" class="form-select">
+              <option value="">Выберите продукт</option>
+              <option value="septik">Септик</option>
+              <option value="kesson">Кессон</option>
+              <option value="montazh">Монтаж</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Комментарий</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Количество человек, тип грунта..."></textarea>
+          </div>
+          
+          <!-- CAPTCHA -->
+          <div class="captcha-group">
+            <span class="captcha-question" id="captchaQuestion">2 + 3 = ?</span>
+            <input type="number" id="captchaAnswer" class="captcha-input" placeholder="Ответ" required>
+            <input type="hidden" id="captchaCorrect" value="5">
+          </div>
+          
+          <button type="submit" class="btn btn-accent submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            Отправить заявку
+          </button>
+          
+          <div id="formSuccess" class="form-success">
+            <i class="fas fa-check-circle"></i>
+            Спасибо! Заявка отправлена. Перезвоним в ближайшее время.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-logo">
+      <i class="fas fa-water"></i>
+      Евролос<span>35</span>
+    </div>
+    <p class="footer-desc">
+      Официальный дилер Eurolos в Вологодской области. 
+      Септики, кессоны, монтаж и обслуживание.
+    </p>
+    
+    <div class="footer-contacts">
+      <a href="tel:+79216860605" class="footer-link">
+        <i class="fas fa-phone-alt"></i>
+        +7 921 686-06-05
+      </a>
+      <a href="https://t.me/Dedal35" target="_blank" class="footer-link">
+        <i class="fab fa-telegram-plane"></i>
+        Telegram
+      </a>
+      <a href="https://eurolos.ru" target="_blank" class="footer-link">
+        <i class="fas fa-external-link-alt"></i>
+        eurolos.ru
+      </a>
+    </div>
+    
+    <div class="developer-credit">
+      Дизайн и разработка: 
+      <a href="https://vk.com/antidolgi24ru?text=Банан,%20нужен%20сайт" target="_blank">
+        studio817 & Банан
+      </a>
+    </div>
+    
+    <div class="copyright">
+      &copy; 2024-2026 Eurolos35.ru — Официальный дилер<br>
+      <a href="https://eurolos.ru" target="_blank">Производитель Eurolos</a>
+    </div>
+  </footer>
+
+  <!-- ===== MOBILE CALL BUTTON ===== -->
+  <div class="mobile-call-button">
+    <a href="tel:+79216860605" class="call-btn">
+      <i class="fas fa-phone-alt"></i>
+      <span>Позвонить</span>
+    </a>
+    <a href="#contacts" class="callback-btn">
+      <i class="fas fa-comment-alt"></i>
+      <span>Заявка</span>
+    </a>
+  </div>
+
+  <!-- ===== POPUP MODAL ===== -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-modal">
+      <button class="popup-close" onclick="closePopup()">
+        <i class="fas fa-times"></i>
+      </button>
+      <h3 class="popup-title">Нужна консультация?</h3>
+      <p class="popup-subtitle">Оставьте телефон — перезвоним через 5 минут</p>
+      
+      <form id="popupForm" onsubmit="submitPopupForm(event)">
+        <div class="form-group">
+          <input type="text" id="popupName" class="form-input" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="popupPhone" class="form-input" placeholder="Телефон" required>
+        </div>
+        
+        <!-- CAPTCHA -->
+        <div class="captcha-group" style="margin-bottom: 1rem;">
+          <span class="captcha-question" id="popupCaptchaQuestion">4 + 2 = ?</span>
+          <input type="number" class="captcha-input" id="popupCaptchaAnswer" placeholder="Ответ" required>
+          <input type="hidden" id="popupCaptchaCorrect" value="6">
+        </div>
+        
+        <button type="submit" class="btn btn-accent" style="width: 100%; justify-content: center;">
+          <i class="fas fa-phone-alt"></i>
+          Перезвоните мне
+        </button>
+      </form>
+      
+      <div id="popupSuccess" class="form-success" style="display: none; margin-top: 1rem;">
+        <i class="fas fa-check-circle"></i>
+        Спасибо! Перезвоним вам soon.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ===== MOBILE MENU =====
+    const mobileToggle = document.getElementById('mobileToggle');
+    const nav = document.getElementById('nav');
+    
+    mobileToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      mobileToggle.innerHTML = nav.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+    
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+    
+    // ===== HEADER SCROLL =====
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // ===== TABS =====
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(tabName).classList.add('active');
+      event.target.classList.add('active');
+    }
+    
+    // ===== CALCULATOR =====
+    let calcData = { people: null, living: null, water: null, install: null };
+    
+    function selectOption(category, value, btn) {
+      calcData[category] = value;
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.calc-option').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      
+      setTimeout(() => {
+        if (category === 'people') {
+          document.getElementById('q2').style.display = 'block';
+          document.getElementById('q2').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else if (category === 'living') {
+          document.getElementById('q3').style.display = 'block';
+          document.getElementById('q3').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else if (category === 'water') {
+          document.getElementById('q4').style.display = 'block';
+          document.getElementById('q4').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else if (category === 'install') {
+          showResult();
+        }
+      }, 300);
+    }
+    
+    function showResult() {
+      const { people, living, water, install } = calcData;
+      let model;
+      
+      if (living === 'seasonal' || water === 'low') {
+        model = 'Eurolos ЭКО';
+      } else if (water === 'high') {
+        model = 'Eurolos ГРУНТ';
+      } else {
+        model = 'Eurolos БИО';
+      }
+      
+      document.getElementById('calc-recommendation').innerHTML = `
+        <strong>${model}</strong><br>
+        <small style="color: var(--gray); font-weight: 400;">
+          На ${people} чел. | ${living === 'permanent' ? 'Постоянное' : 'Сезонное'} проживание
+        </small>
+      `;
+      
+      document.getElementById('calc-price').innerHTML = 'от 100 000 ₽';
+      document.getElementById('calc-result').style.display = 'block';
+      document.getElementById('calc-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+    
+    function resetCalculator() {
+      calcData = { people: null, living: null, water: null, install: null };
+      document.querySelectorAll('.calc-option').forEach(b => b.classList.remove('selected'));
+      document.getElementById('q2').style.display = 'none';
+      document.getElementById('q3').style.display = 'none';
+      document.getElementById('q4').style.display = 'none';
+      document.getElementById('calc-result').style.display = 'none';
+      document.getElementById('calcForm').reset();
+      window.scrollTo({ top: document.getElementById('calculator').offsetTop - 100, behavior: 'smooth' });
+    }
+    
+    // ===== FORMS SUBMIT =====
+    function generateCaptcha() {
+      const a = Math.floor(Math.random() * 5) + 1;
+      const b = Math.floor(Math.random() * 5) + 1;
+      document.getElementById('captchaQuestion').textContent = `${a} + ${b} = ?`;
+      document.getElementById('captchaCorrect').value = a + b;
+      
+      document.getElementById('popupCaptchaQuestion').textContent = `${a+2} + ${b} = ?`;
+      document.getElementById('popupCaptchaCorrect').value = a + b + 2;
+    }
+    
+    function submitForm(e) {
+      e.preventDefault();
+      const captchaAnswer = parseInt(document.getElementById('captchaAnswer').value);
+      const captchaCorrect = parseInt(document.getElementById('captchaCorrect').value);
+      
+      if (captchaAnswer !== captchaCorrect) {
+        alert('Неверный ответ на вопрос! Попробуйте еще раз.');
+        generateCaptcha();
+        return;
+      }
+      
+      // Here you would normally send data to server
+      document.getElementById('formSuccess').style.display = 'block';
+      document.getElementById('leadForm').reset();
+      generateCaptcha();
+      setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
+    }
+    
+    function submitCalcForm(e) {
+      e.preventDefault();
+      alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+      document.getElementById('calcForm').reset();
+    }
+    
+    function submitPopupForm(e) {
+      e.preventDefault();
+      const captchaAnswer = parseInt(document.getElementById('popupCaptchaAnswer').value);
+      const captchaCorrect = parseInt(document.getElementById('popupCaptchaCorrect').value);
+      
+      if (captchaAnswer !== captchaCorrect) {
+        alert('Неверный ответ!');
+        generateCaptcha();
+        return;
+      }
+      
+      document.getElementById('popupSuccess').style.display = 'block';
+      document.getElementById('popupForm').reset();
+      generateCaptcha();
+      setTimeout(() => { closePopup(); document.getElementById('popupSuccess').style.display = 'none'; }, 2000);
+    }
+    
+    // ===== POPUP =====
+    let popupShown = localStorage.getItem('popupShown');
+    const popupTime = localStorage.getItem('popupTime');
+    const now = Date.now();
+    
+    function showPopup() {
+      if (!popupShown || (now - popupTime > 7 * 24 * 60 * 60 * 1000)) {
+        document.getElementById('popupOverlay').classList.add('active');
+        localStorage.setItem('popupShown', 'true');
+        localStorage.setItem('popupTime', now);
+      }
+    }
+    
+    function closePopup() {
+      document.getElementById('popupOverlay').classList.remove('active');
+    }
+    
+    // Show popup after 40 seconds
+    setTimeout(showPopup, 40000);
+    
+    // Exit intent
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY < 0 && !document.getElementById('popupOverlay').classList.contains('active')) {
+        showPopup();
+      }
+    });
+    
+    // Close popup on overlay click
+    document.getElementById('popupOverlay').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('popupOverlay')) {
+        closePopup();
+      }
+    });
+    
+    // ===== COUNTDOWN =====
+    function updateCountdown() {
+      const endDate = new Date('2026-04-30T23:59:59');
+      
+      function calculateRemaining() {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+        
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        
+        document.getElementById('days').textContent = String(Math.max(0, days)).padStart(2, '0');
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      }
+      
+      calculateRemaining();
+      setInterval(calculateRemaining, 60000);
+    }
+    updateCountdown();
+    
+    // ===== ANIMATIONS ON SCROLL =====
+    const animateElements = document.querySelectorAll('.animate-on-scroll, .product-card, .service-card, .trust-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    animateElements.forEach(el => observer.observe(el));
+    
+    // ===== PHONE MASK =====
+    const phoneInputs = document.querySelectorAll('input[type="tel"]');
+    phoneInputs.forEach(input => {
+      input.addEventListener('input', function(e) {
+        let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 0 && value[0] === '7') value = value.slice(1);
+        if (value.length > 0 && value[0] === '8') value = value.slice(1);
+        if (value.length > 0) value = '+7 (' + value;
+        if (value.length > 4) value = value.slice(0, 4) + ') ' + value.slice(4);
+        if (value.length > 9) value = value.slice(0, 9) + '-' + value.slice(9);
+        if (value.length > 12) value = value.slice(0, 12) + '-' + value.slice(12);
+        if (value.length > 15) value = value.slice(0, 15);
+        e.target.value = value;
+      });
+    });
+    
+    // ===== INIT =====
+    window.addEventListener('load', () => {
+      generateCaptcha();
+      animateElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.9) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
