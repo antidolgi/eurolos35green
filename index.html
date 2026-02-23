@@ -1619,21 +1619,45 @@
     
     animateElements.forEach(el => observer.observe(el));
     
-    // ===== PHONE MASK =====
-    const phoneInputs = document.querySelectorAll('input[type="tel"]');
-    phoneInputs.forEach(input => {
-      input.addEventListener('input', function(e) {
-        let value = e.target.value.replace(/\D/g, '');
-        if (value.length > 0 && value[0] === '7') value = value.slice(1);
-        if (value.length > 0 && value[0] === '8') value = value.slice(1);
-        if (value.length > 0) value = '+7 (' + value;
-        if (value.length > 4) value = value.slice(0, 4) + ') ' + value.slice(4);
-        if (value.length > 9) value = value.slice(0, 9) + '-' + value.slice(9);
-        if (value.length > 12) value = value.slice(0, 12) + '-' + value.slice(12);
-        if (value.length > 15) value = value.slice(0, 15);
-        e.target.value = value;
-      });
-    });
+   
+   // ===== PHONE MASK =====
+const phoneInputs = document.querySelectorAll('input[type="tel"]');
+phoneInputs.forEach(input => {
+  input.addEventListener('input', function(e) {
+    // Получаем только цифры
+    let digits = e.target.value.replace(/\D/g, '');
+    
+    // Убираем ведущие 7 или 8 (российские коды)
+    if (digits.length > 0 && (digits[0] === '7' || digits[0] === '8')) {
+      digits = digits.slice(1);
+    }
+    
+    // Ограничиваем 10 цифрами (номер без +7)
+    if (digits.length > 10) digits = digits.slice(0, 10);
+    
+    // Форматируем: +7 (XXX) XXX-XX-XX
+    let formatted = '+7';
+    if (digits.length > 0) formatted += ' (' + digits.slice(0, 3);
+    if (digits.length >= 3) formatted += ') ' + digits.slice(3, 6);
+    if (digits.length >= 6) formatted += '-' + digits.slice(6, 8);
+    if (digits.length >= 8) formatted += '-' + digits.slice(8, 10);
+    
+    e.target.value = formatted;
+  });
+  
+  // Дополнительно: очистка при фокусе (чтобы можно было редактировать)
+  input.addEventListener('focus', function(e) {
+    if (e.target.value === '+7 () ') e.target.value = '';
+  });
+  
+  // При потере фокуса: если введено мало цифр — очищаем
+  input.addEventListener('blur', function(e) {
+    let digits = e.target.value.replace(/\D/g, '');
+    if (digits.length < 10 && digits.length > 0) {
+      e.target.value = '';
+    }
+  });
+});
     
     // ===== INIT =====
     window.addEventListener('load', () => {
