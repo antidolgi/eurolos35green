@@ -1699,7 +1699,7 @@ phoneInputs.forEach(input => {
   });
 });
     
-   // ===== INIT =====
+// ===== INIT =====
 window.addEventListener('load', () => {
   generateCaptcha();
   animateElements.forEach(el => {
@@ -1709,9 +1709,9 @@ window.addEventListener('load', () => {
     }
   });
 });
-</script>  <!-- ← 1. СНАЧАЛА закрываем script -->
+</script>  <!-- ✅ 1. Сначала ЗАКРЫВАЕМ script -->
 
-<!-- 2. ПОТОМ вставляем HTML модального окна -->
+<!-- 2. Потом вставляем HTML модального окна (ВНЕ script!) -->
 <!-- VIDEO MODAL -->
 <div id="videoModal" class="popup-overlay" style="z-index: 3000;">
   <div class="popup-modal" style="max-width: 900px; padding: 0; background: transparent; box-shadow: none;">
@@ -1726,5 +1726,5 @@ window.addEventListener('load', () => {
   </div>
 </div>
 
-</body>  <!-- ← 3. Потом закрываем body -->
+</body>  <!-- ✅ 3. Потом закрываем body -->
 </html>
